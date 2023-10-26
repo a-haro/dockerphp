@@ -96,7 +96,7 @@ if ($num <= 50) {
         }
     }
 } else {
-    for ($i = 51; $i <= 101 ; $i++) {
+    for ($i = 51; $i <= 100 ; $i++) {
         if ($i == $num){
             print "El número es $i";
         }
