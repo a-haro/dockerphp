@@ -182,14 +182,21 @@ for ($i = $var1; $i <= $var2; $i++){
 <b>Ejercicio 14</b>
 <br><br>
 <?php
-$n = 6;
-if ($n == 1 || $n == 2 || $n == 3 || $n == 5){
+$n = 7;
+if ($n == 2){
     print "$n es primo";
-}
-elseif ($n % 2 == 0 || $n % 3 == 0 || $n % 5 == 0){
+} elseif ($n == 1){
     print "$n no es primo";
 } else {
-    print "$n es primo";
+    for ($i = 2; $i < $n; $i++){
+        if ($n % $i == 0){
+            print "$n no es primo";
+            break;
+        } else {
+            print "$n es primo";
+            break;
+        }
+    }
 }
 ?>
 <br><br>
@@ -197,21 +204,16 @@ elseif ($n % 2 == 0 || $n % 3 == 0 || $n % 5 == 0){
 <br><br>
 <ol type="A">
 <?php
-$esprImo = false;
-$n = 276;
-if ($n < 0) {
-    print "$n es negativo";
-}
-for ($i = 0; $i <= $n; $i++){
-    if ($i == 1 || $i == 2 || $i == 3 || $i == 5){
-        $esprImo = true;
+$n = 30;
+for ($i = 2; $i <= $n; $i++){
+    $esPrimo = true;
+    for ($j = 2; $j < $i; $j++){
+        if ($i % $j === 0){
+            $esPrimo = false;
+            break;
+        }
     }
-    elseif ($i % 2 == 0 || $i % 3 == 0 || $i % 5 == 0){
-        $esprImo = false;
-    } else {
-        $esprImo = true;
-    }
-    if ($esprImo == true){
+    if ($esPrimo){
         print "<li>$i</li>";
     }
 }
