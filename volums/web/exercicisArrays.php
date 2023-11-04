@@ -138,5 +138,24 @@ print "Hay $numsPositivos números positivos<br>";
 print "Hay $numsNegativos números negativos<br>";
 print "Hay $numsZeros ceros<br>";
 ?>
+<br><br>
+<b>Ejercicio 11</b>
+<br><br>
+<?php
+$arraySorted = array(1,2,3,4);
+$arrLong = count($arraySorted);
+for ($i = 0; $i < $arrLong; $i++){
+    print $arraySorted[$i];
+    print "<br>";
+}
+print "Vamos a introducir 2 números, 7 y 8<br>";
+$arraySorted[] = 7;
+$arraySorted[] = 8;
+$arrLong = count($arraySorted);
+for ($i = 0; $i < $arrLong; $i++){
+    print $arraySorted[$i];
+    print "<br>";
+}
+?>
 </body>
 </html>
