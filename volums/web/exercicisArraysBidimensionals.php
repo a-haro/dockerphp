@@ -27,9 +27,9 @@
     <br><br>
     <?php
     $matriu = array(
-        array(2, 5, 3),
+        array(2, 5, 3, 1),
         array(4, 6, 7),
-        array(5, 7, 8)
+        array(5, 7, 8, 3, 1)
     );
     $total = 0;
     $elements = 0;
