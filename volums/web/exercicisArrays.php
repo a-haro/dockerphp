@@ -176,11 +176,11 @@
     <?php
     $arrayIFC31A = array("Antonio", "Pere", "Paco", "Jaume", "Alex", "Ruben");
     $arrayIFC31B = array("Tarik", "Pere", "Ana", "Toni", "Pedro", "Juan");
-    print_r (array_diff($arrayIFC31A, $arrayIFC31B));
+    print_r(array_diff($arrayIFC31A, $arrayIFC31B));
     print "<br>";
-    print_r (array_intersect($arrayIFC31A, $arrayIFC31B));
+    print_r(array_intersect($arrayIFC31A, $arrayIFC31B));
     print "<br>";
-    print_r (array_merge($arrayIFC31A, $arrayIFC31B));
+    print_r(array_merge($arrayIFC31A, $arrayIFC31B));
     ?>
 </body>
 
